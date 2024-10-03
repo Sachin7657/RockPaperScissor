@@ -42,11 +42,11 @@ const playGame=(usrChoice) =>{
         drawGame();
     }else{
         let usrWin=true;
-        if(usrChoice="rock"){
+        if(usrChoice==="rock"){
             usrWin = compChoice ==="paper"? false:true
-        }else if(usrChoice="scissor"){
+        }else if(usrChoice==="scissor"){
             usrWin = compChoice === "rock"? false:true
-        }else{
+        }else if (usrChoice==="paper"){
             usrWin = compChoice ==="scissor"? false:true
         }
         showResult(usrWin,usrChoice,compChoice);
